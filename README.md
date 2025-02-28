@@ -13,18 +13,15 @@ This project automates *data quality monitoring* in cloud databases using *AI te
 
 ## 🚀 Setup & Installation
 ### 1️⃣ Clone the Repository
-sh
-git clone https://github.com/yourusername/AI-Data-Quality-Monitoring.git
-cd AI-Data-Quality-Monitoring
+git clone https://github.com/HarshithaVbhandary/Automating-Data-Quality-Monitoring-in-Cloud-Database-Warehouses-with-AI.git
+cd Automating-Data-Quality-Monitoring-in-Cloud-Database-Warehouses-with-AI
 
 
 ### 2️⃣ Install Dependencies
-sh
 pip install -r requirements.txt
 
 
 ### 3️⃣ Run the Flask App
-sh
 python app.py
 
 
