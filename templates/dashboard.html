@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Quality Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h2, h3 { color: #333; }
+        img { max-width: 100%; height: auto; margin-top: 10px; }
+        pre { background-color: #f4f4f4; padding: 10px; overflow-x: auto; }
+        table { width: 50%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 6px; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        td:first-child { width: 20%; white-space: nowrap; } /* Reduced width of first column */
+        td:last-child { width: 5%; text-align: center; } /* Reduced width of second column */
+        a { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        a:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h2>Data Quality Analysis & Model Evaluation</h2>
+
+    <h3>Data Preview</h3>
+    {{ data_preview|safe }}
+
+    <h3>Missing Values per Column</h3>
+    <table>
+        <tbody>
+            {{ missing_values_html|safe }}
+        </tbody>
+    </table>
+
+    <h3>Missing Values Visualization</h3>
+    <img src="{{ url_for('static', filename='missing_values.png') }}" alt="Missing Values Bar Chart">
+
+    <h3>Duplicate Rows Analysis</h3>
+    <p><b>Total Duplicate Rows:</b> {{ duplicate_rows }}</p>
+    
+    <h3>Duplicate Rows Distribution</h3>
+    <img src="{{ url_for('static', filename='duplicate_distribution.png') }}" alt="Duplicate Rows Distribution">
+
+    <h3>Confusion Matrix</h3>
+    <img src="{{ url_for('static', filename='confusion_matrix.png') }}" alt="Confusion Matrix">
+
+    <h3>Model Performance</h3>
+    <p><b>Decision Tree Accuracy:</b> {{ dt_accuracy }}</p>
+    <p><b>ROC AUC Score:</b> {{ roc_auc }}</p>
+
+    <h3>Classification Report:</h3>
+    <pre>{{ class_report }}</pre>
+
+    <br><br>
+    <a href="/">Upload Another File</a>
+</body>
+</html>
