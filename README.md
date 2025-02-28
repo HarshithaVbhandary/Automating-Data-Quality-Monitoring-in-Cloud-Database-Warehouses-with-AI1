@@ -14,7 +14,7 @@ This project automates *data quality monitoring* in cloud databases using *AI te
 ## 🚀 Setup & Installation
 ### 1️⃣ Clone the Repository
 git clone https://github.com/HarshithaVbhandary/Automating-Data-Quality-Monitoring-in-Cloud-Database-Warehouses-with-AI.git
-cd Automating-Data-Quality-Monitoring-in-Cloud-Database-Warehouses-with-AI
+ cd Automating-Data-Quality-Monitoring-in-Cloud-Database-Warehouses-with-AI
 
 
 ### 2️⃣ Install Dependencies
@@ -34,7 +34,8 @@ Upload a CSV file and view results!
 
 ## 📂 Project Structure
 
-AI_Data_Quality_Project/
+
+ AI_Data_Quality_Project/
 │── templates/
 │   ├── upload.html        # Upload Page
 │   ├── dashboard.html     # Dashboard Page
