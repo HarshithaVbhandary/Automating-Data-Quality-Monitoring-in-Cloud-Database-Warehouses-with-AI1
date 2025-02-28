@@ -39,7 +39,7 @@ Upload a CSV file and view results!
  AI_Data_Quality_Project/
 
 │── templates/
-│   ├── upload.html        # Upload Page
+ │   ├── upload.html        # Upload Page
 │   ├── dashboard.html     # Dashboard Page
 │── uploads/               # Stores uploaded files and images
 │── static/                # Stores visualization images
